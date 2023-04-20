@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <title>Nimekiri</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Kasutajate Nimekiri</h1>
+        <div class="search-wrapper">
+            <input type="search" class="search" data-search placeholder="Otsi kasutajat">
+        </div>
+        <div class="user-cards" data-user-cards-container>
+            <template data-user-template>
+                <div class="card">
+                    <div class="header" data-header></div>
+                    <div class="body hide" data-body>
+                        <p class="addressTitle">Address</p>
+                        <div class="address hide" data-address></div>
+                        <p class="companyTitle">Company</p>
+                        <div class="company hide" data-company></div>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
